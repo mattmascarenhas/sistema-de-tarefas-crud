@@ -6,5 +6,7 @@ namespace SistemaDeTarefas.Models {
         public String? Nome { get; set; }
         public String? Descricao { get; set; }
         public StatusTarefa Status { get; set; }
+        public int? UsuarioId { get; set; } //pode ser nulo
+        public virtual UsuarioModel? Usuario {  get; set;  } //pode ser nulo 
     }
 }
